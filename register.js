@@ -1,5 +1,5 @@
 // login button functionality 
-document.getElementById('loginBtn').addEventListener("click", function(e){
+document.getElementById('registerbtn').addEventListener("click", function(e){
     e.preventDefault()
     const mobileNumber = 12345678910;
     const pinNumber = 1234;
@@ -11,7 +11,7 @@ document.getElementById('loginBtn').addEventListener("click", function(e){
     const pinNumberValueconverted = parseInt(pinNumberValue)
 
     if(mobileNumberValueConverted === mobileNumber && pinNumberValueconverted === pinNumber){
-        window.location.href = "./home.html"
+        window.location.href = "./index.html"
     }
     else{
         alert("Invalid credentials")
